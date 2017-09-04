@@ -1,0 +1,38 @@
+{
+  "name": "siwa/usersnap_backend",
+  "type": "typo3-cms-extension",
+  "description": "Usersnap for TYPO3 Backend",
+  "homepage": "https://www.siwa.at",
+  "license": [
+    "GPL-2.0+"
+  ],
+  "keywords": [
+    "TYPO3 CMS",
+    "Usersnap"
+  ],
+  "support": {
+    "issues": "https://github.com/siwaonline/usersnap-typo3-backend/issues"
+  },
+  "version": "8.7.0",
+  "config": {
+    "vendor-dir": ".Build/vendor",
+    "bin-dir": ".Build/bin"
+  },
+  "replace": {
+    "siwa/usersnap_backend": "self.version"
+  },
+  "extra": {
+    "branch-alias": {
+      "master": "8.7.0"
+    },
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": ".Build/Web"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "SIWA\\UsersnapBackend\\": "Classes"
+    }
+  }
+}
